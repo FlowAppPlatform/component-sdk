@@ -1,0 +1,34 @@
+{
+  "name": "flow-app-component",
+  "version": "1.0.0",
+  "description": "Component SDK for Flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowepinc/component-sdk.git"
+  },
+  "keywords": [
+    "flow",
+    "flow",
+    "component",
+    "flow",
+    "component",
+    "sdk",
+    "component",
+    "sdk",
+    "app",
+    "builder",
+    "app",
+    "builder",
+    "sdk"
+  ],
+  "author": "Hackerbay Inc <hello@hackerbay.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/flowepinc/component-sdk/issues"
+  },
+  "homepage": "https://github.com/flowepinc/component-sdk#readme"
+}
