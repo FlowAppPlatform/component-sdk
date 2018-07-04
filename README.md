@@ -1,4 +1,4 @@
-# component-sdk
+# flow-app-component
 Component SDK for Flow. 
 
 # Install SDK
