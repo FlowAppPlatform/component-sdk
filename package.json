@@ -12,18 +12,10 @@
   },
   "keywords": [
     "flow",
-    "flow",
-    "component",
-    "flow",
-    "component",
-    "sdk",
     "component",
     "sdk",
     "app",
-    "builder",
-    "app",
-    "builder",
-    "sdk"
+    "builder"
   ],
   "author": "Hackerbay Inc <hello@hackerbay.io>",
   "license": "Apache-2.0",
