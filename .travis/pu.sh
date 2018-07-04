@@ -42,8 +42,8 @@ upload_files() {
 deploy_package() {
     echo "//registry.npmjs.org/:_password=${NPM_PASSWORD}" > ~/.npmrc
     echo "//registry.npmjs.org/:_authToken=${NPM_API_KEY}" >> ~/.npmrc
-    echo "//registry.npmjs.org/:username=donriddo" >> ~/.npmrc
-    echo "//registry.npmjs.org/:email=donriddo@gmail.com" >> ~/.npmrc
+    echo "//registry.npmjs.org/:username=${NPM_USERNAME}" >> ~/.npmrc
+    echo "//registry.npmjs.org/:email=${NPM_EMAIL}" >> ~/.npmrc
     npm publish
 }
 
