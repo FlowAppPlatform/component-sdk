@@ -1,9 +1,17 @@
 language: node_js
+node_js:
+  - 8
+
+install:
+  - npm install
+
+script:
+  - npm test
+
 deploy:
-  provider: npm
-  email: hello@hackerbay.io
-  api_key:
-    secure: AQvumDSKAdoWVaf6gPdRO30C4g5lMP439nkbeYf7pdTJeugMGnNtdbw4Fx9mx0YdV/PJu3UwYibdGJk4l8M3jxl6a1oLs3xctanjGtSiXySRrzgKPpDq7PQ2H7UByrnZWKEB21ZzWhleezDPhXETgpFLAR/y2Lzw2OOxWoawmXQoc9DgmaMTkB/IRC6nct7SeBG9rnq4b7VR3jsjXMTah3LqAXYzPDoxZoub3bYgmQg26lGH7rguWkQW//hjPq8bRj4g78OHWVtDDqqYoUFFy5wRAPk/UxsAWqV95/+Eanvvjv1H57AAYdHPhN3ecPsGVKMnbBpXhzRX/D6WSxt12YIdr0sTpc8n0Qlm8m57GrIdBZelgMTzZiD2gZ9RII8gZbCAyJbwFcJF/APNQEjcBpWjPuVl03uQ2gJ5kPPiY9UIMOecQB7W0a9wdLSQSWAWTP9j93F7Bde8up6619k0NAErS7Qjc0TqnSMPUuIIpTHIGStna3GWlfxmCuuLKhmBBB4G05LVAlsSXugXvJ7KRAFSox8KIjF+Ig9bSu6BVznPFLTs0TkA2JVxMuDKsKhm4iHN8yxdgb32GbzGvM2yoVHiYDdU1lL6JoivsRCiMpwg6bISKiQi9wyuJgrqEViX3WgMmPjYG8lNJfPDNL8YUxgqDtiMs5jsGsZ0elx8st8=
-  on:
-    branch: release
-    repo: flowepinc/component-sdk
+ provider: script
+ skip_cleanup: true
+ script: sh $TRAVIS_BUILD_DIR/.travis/pu.sh
+ on:
+   branch: release
+   tags: false
