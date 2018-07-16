@@ -8,6 +8,7 @@ class AppComponent extends Component {
             name: '',
             iconUrl: '',
         };
+        this.style = { opacity: this.props.isDragging ? 0 : 1 };
     }
 
     getPropertyData(id) {
