@@ -20,6 +20,10 @@ class AppComponent extends Component {
         return property && property.data ? property.data : null;
     }
 
+    getDefaultStyle() {
+      return { opacity: this.props && this.props.isDragging ? 0 : 1 };
+    }
+
     renderContent() {
         return '';
     }
