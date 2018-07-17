@@ -17,7 +17,7 @@
     "app",
     "builder"
   ],
-  "author": "Hackerbay Inc <hello@hackerbay.io>",
+  "author": "Hackerbay Inc. <hello@hackerbay.io>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/flowepinc/component-sdk/issues"
