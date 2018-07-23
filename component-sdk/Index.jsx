@@ -32,6 +32,10 @@ class AppComponent extends Component {
       return elemProps;
     }
 
+    propertyUpdated(id, data) {
+      // do nothing
+    }
+
     renderContent() {
         return '';
     }
