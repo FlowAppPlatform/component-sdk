@@ -24,6 +24,14 @@ class AppComponent extends Component {
       return { opacity: this.props && this.props.isDragging ? 0 : 1 };
     }
 
+    getDefaultProps() {
+      let elemProps = Object.assign({}, this.props);
+      delete elemProps.nodeData;
+      delete elemProps.positioningClasses;
+      delete elemProps.propertyData;
+      return elemProps;
+    }
+
     renderContent() {
         return '';
     }
