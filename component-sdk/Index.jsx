@@ -37,11 +37,11 @@ class AppComponent extends Component {
     }
 
     renderContent() {
-        return '';
+        return null;
     }
 
     render() {
-        return null;
+        return this.renderContent();
     }
 }
 
