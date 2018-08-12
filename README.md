@@ -45,8 +45,9 @@ class LinkButtonComponent extends AppComponent {
     }
 
     renderContent() {
-        const elemProps = Object.assign({}, this.props);
-        delete elemProps.propertyData;
+        const buttonStyle = {};
+        const elemProps = this.getElementProps();
+        elemProps.style = Object.assign(this.getDefaultStyle(), buttonStyle);
         return (
           <button {...elemProps}>
             <a>

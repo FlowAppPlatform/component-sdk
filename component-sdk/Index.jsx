@@ -20,6 +20,22 @@ class AppComponent extends Component {
         return property && property.data ? property.data : null;
     }
 
+    getDefaultStyle() {
+      return { opacity: this.props && this.props.isDragging ? 0 : 1 };
+    }
+
+    getElementProps() {
+      let elemProps = Object.assign({}, this.props);
+      delete elemProps.nodeData;
+      delete elemProps.positioningClasses;
+      delete elemProps.propertyData;
+      return elemProps;
+    }
+
+    propertyUpdated(id, data) {
+      // do nothing
+    }
+
     renderContent() {
         return null;
     }
