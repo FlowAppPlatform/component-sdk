@@ -1,4 +1,4 @@
-# flow-app-component
+# Flow Component SDK
 Component SDK for Flow. 
 
 # Install SDK
@@ -57,10 +57,6 @@ class LinkButtonComponent extends AppComponent {
             </a>
           </button>
         );
-    }
-
-    render() {
-        return this.renderContent();
     }
 }
 
