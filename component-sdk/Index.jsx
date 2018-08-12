@@ -25,7 +25,7 @@ class AppComponent extends Component {
     }
 
     render() {
-        return null;
+        return this.renderContent();
     }
 }
 
