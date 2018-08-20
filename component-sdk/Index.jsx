@@ -5,7 +5,7 @@ class AppComponent extends Component {
         super();
         this.state = {
             properties: [],
-            name: '',
+            name: '', //name to show on the right comp panel. 
             iconUrl: '',
             componentType: '', //type of the component
             parent: null, //parent of this component
