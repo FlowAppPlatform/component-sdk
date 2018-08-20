@@ -7,6 +7,12 @@ class AppComponent extends Component {
             properties: [],
             name: '',
             iconUrl: '',
+            componentType: '', //type of the component
+            parent: null, //parent of this component
+            showOnComponentsPanel: false, //show on the right components panel?
+            isDeleteable: true, //can this be deleetd?
+            isValuable: false, //is this an imp component. (i.e: Ask confirmation before delete?)
+            children:[] //children of this component. 
         };
     }
 
@@ -34,6 +40,10 @@ class AppComponent extends Component {
 
     propertyUpdated(id, data) {
       // do nothing
+    }
+    
+    renderChildren(){
+       return null;
     }
 
     renderContent() {
