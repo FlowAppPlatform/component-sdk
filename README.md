@@ -1,13 +1,13 @@
-# flow-app-component
+# Flow Component SDK
 Component SDK for Flow. 
 
-# Install SDK
+### Install SDK
 `npm install flow-app-component --save`
 
-# Import into your React project
+### Import into your React project
 `import AppComponent from 'flow-app-component';`
 
-# Basic Example
+### Basic Example
 LinkButton.jsx
 ```
 import React from 'react';
