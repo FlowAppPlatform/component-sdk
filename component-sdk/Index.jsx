@@ -17,13 +17,7 @@ class AppComponent extends Component {
     }
 
     getPropertyData(id) {
-        let property = findFirst(
-            Object.assign({}, { properties: this.props.propertyData }), 
-            'properties', 
-            { id }
-        );
-
-        return property && property.data ? property.data : null;
+        return this.props && this.props.propertyData ? this.props.propertyData[id] : null;
     }
 
     getDefaultStyle() {
