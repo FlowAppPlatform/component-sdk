@@ -33,7 +33,7 @@ class AppComponent extends Component {
     }
 
     propertyUpdated(id, data) {
-      //do nothing. 
+      //do nothing, 
     }
     
     renderChildren(){
