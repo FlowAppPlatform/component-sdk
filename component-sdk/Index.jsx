@@ -38,12 +38,12 @@ class AppComponent extends Component {
     
     renderChildren(){
        for(var i=0;i<this.state.children.length; i++){
-            this.renderChildren(this.state.children[i]);
+            this.renderChild(this.state.children[i]);
        }
              
     }
     
-    renderChildren(childId){
+    renderChild(childId){
         return null;
     }
 
