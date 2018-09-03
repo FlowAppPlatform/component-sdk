@@ -46,6 +46,19 @@ class AppComponent extends Component {
        return this.props.children;
     }
     
+    getComponent(id){
+        return this.props.getComponent(id);
+    }
+
+      getComponentType(id){
+        return this.props.getComponentType(id);
+      }
+
+  getComponentPropertyData(componentId, propertyId){
+    return this.props.getComponentPropertyData(componentId, propertyId);
+  }
+  
+    
     renderContent() {
         return null;
     }
