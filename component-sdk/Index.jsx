@@ -31,6 +31,12 @@ class AppComponent extends Component {
       delete elemProps.propertyData;
       return elemProps;
     }
+    
+    shouldRenderChild(childId){
+        //should this child be rendered. By default, yes. 
+        return true;
+    
+    }
 
     propertyUpdated(id, data) {
       //do nothing, 
