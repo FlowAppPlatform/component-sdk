@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class AppComponent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             properties: [],
             name: '', //name to show on the right comp panel. 
