@@ -43,16 +43,9 @@ class AppComponent extends Component {
     }
     
     renderChildren(){
-       for(var i=0;i<this.state.children.length; i++){
-            this.renderChildren(this.state.children[i]);
-       }
-             
+       return this.props.children;
     }
     
-    renderChildren(childId){
-        return null;
-    }
-
     renderContent() {
         return null;
     }
