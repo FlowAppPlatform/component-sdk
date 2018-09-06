@@ -37,7 +37,7 @@ class AppComponent extends Component {
     }
     
     renderChildren(){
-       for(var i=0;i<this.state.children.length; i++){
+       for (let i = 0; i < this.state.children.length; i++) {
             this.renderChild(this.state.children[i]);
        }
              
@@ -48,7 +48,7 @@ class AppComponent extends Component {
     }
 
     renderContent() {
-        return null;
+        return <div> { this.renderChildren() } </div>;
     }
 
     render() {
