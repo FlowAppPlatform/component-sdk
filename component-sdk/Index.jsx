@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class AppComponent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             properties: [],
             name: '', //name to show on the right comp panel. 
@@ -31,22 +31,34 @@ class AppComponent extends Component {
       delete elemProps.propertyData;
       return elemProps;
     }
+    
+    shouldRenderChild(childId){
+        //should this child be rendered. By default, yes. 
+        return true;
+    
+    }
 
     propertyUpdated(id, data) {
       //do nothing, 
     }
     
     renderChildren(){
-       for (let i = 0; i < this.state.children.length; i++) {
-            this.renderChild(this.state.children[i]);
-       }
-             
+       return this.props.children;
     }
     
-    renderChild(childId){
-        return null;
+    getComponent(id){
+        return this.props.getComponent(id);
     }
 
+      getComponentType(id){
+        return this.props.getComponentType(id);
+      }
+
+  getComponentPropertyData(componentId, propertyId){
+    return this.props.getComponentPropertyData(componentId, propertyId);
+  }
+  
+    
     renderContent() {
         return <div> { this.renderChildren() } </div>;
     }
