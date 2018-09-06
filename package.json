@@ -1,6 +1,6 @@
 {
   "name": "flow-app-component",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "description": "Component SDK for Flow.",
   "main": "index.js",
   "scripts": {
