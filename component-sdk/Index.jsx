@@ -55,6 +55,17 @@ class AppComponent extends Component {
 
 	getComponentPropertyData(componentId, propertyId) {
 		return this.props.getComponentPropertyData(componentId, propertyId);
+    }
+    setPropertyData(componentId, propertyId, data) {
+		this.props.setPropertyData && this.props.setPropertyData(componentId, propertyId, data);
+	}
+
+	setChildPropertyData(childId, propertyId, data) {
+		this.setPropertyData(childId, propertyId, data);
+	}
+
+	getChildPropertyData(childId, propertyId) {
+		return this.getComponentPropertyData(childId, propertyId);
 	}
 
 	renderOnPropertiesPanel() {
