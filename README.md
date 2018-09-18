@@ -58,10 +58,6 @@ class LinkButtonComponent extends AppComponent {
           </button>
         );
     }
-
-    render() {
-        return this.renderContent();
-    }
 }
 
 
