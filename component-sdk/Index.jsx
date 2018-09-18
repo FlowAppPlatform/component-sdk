@@ -12,7 +12,8 @@ class AppComponent extends Component {
 			showOnComponentsPanel: true, //show on the right components panel?
 			isDeleteable: true, //can this be deleetd?
 			isValuable: false, //is this an imp component. (i.e: Ask confirmation before delete?)
-			children: [] //children of this component.
+			children: [], //children of this component.
+			allowsChildren: false, // allow component to have children
 		};
 	}
 
@@ -43,17 +44,6 @@ class AppComponent extends Component {
 
 	renderChildren() {
 		return this.props.children;
-	}
-
-	allowsChildren() {
-		return [
-			'app',
-			'page',
-			'nav',
-			'navItem',
-			'container',
-			'form'
-		].includes(this.state.componentType);
 	}
 
 	getComponent(id) {
