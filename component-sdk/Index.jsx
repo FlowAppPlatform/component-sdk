@@ -45,6 +45,17 @@ class AppComponent extends Component {
 		return this.props.children;
 	}
 
+	allowsChildren() {
+		return [
+			'app',
+			'page',
+			'nav',
+			'navItem',
+			'container',
+			'form'
+		].includes(this.state.componentType);
+	}
+
 	getComponent(id) {
 		return this.props.getComponent(id);
 	}
