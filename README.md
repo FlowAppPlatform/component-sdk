@@ -116,6 +116,7 @@ Every component is associated with a set of properties that follow a schema. The
 #### Components
 
 The following is the explanation of the terms you'll see for a component.
+
 | Term                  | Description                                                          | Type                                  |
 | --------------------- | -------------------------------------------------------------------- | ------------------------------------- |
 | iconUrl               | The URL of the icon to show in the Component panel                   | String                                |
@@ -125,7 +126,7 @@ The following is the explanation of the terms you'll see for a component.
 | parent                | The ID of the parent component                                       | String                                |
 | showOnComponentsPanel | Should the component be shown on the Component Panel?                | Boolean                               |
 | isDeleteable          | Can the component be deleted?                                        | Boolean                               |
-| isValuable            | Is the component valuable (prompt before deleting) ?                 | Boolean                               |
+| isValuable            | Is the component valuable (prompt before deleting)?                  | Boolean                               |
 | allowsChildren        | Does the component allow children?                                   | Boolean                               |
 | allowedChildTypes     | Allowed types of children                                            | { number: Number, types: String[] }[] |
 | allowedParentTypes    | Allowed types of parents                                             | String[]                              |
