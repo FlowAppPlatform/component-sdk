@@ -195,7 +195,7 @@ The "type" of the property can be any one of the following:
 
 Some properties are specific to certain component. The following table lists such properties.
 
-##### app Component
+##### app
 | Property ID    | Property Type | Description                                                 |
 | -------------- | ------------- | ----------------------------------------------------------- |
 | home-page      | select-page   | The first page to open when the app is opened               |
@@ -203,12 +203,12 @@ Some properties are specific to certain component. The following table lists suc
 | error-page     | select-page   | The page to use for an error response                       |
 | allowed-roles  | dropdown      | The allowed roles for the app, others can't access the page |
 
-##### directory Component
+##### directory
 | Property ID   | Property Type | Description                                                        |
 | ------------- | ------------- | ------------------------------------------------------------------ |
 | allowed-roles | dropdown      | Allowed roles for the directory. All child pages will be affected. |
 
-##### page Component
+##### page
 | Property ID   | Property Type | Description                      |
 | ------------- | ------------- | -------------------------------- |
 | allowed-roles | dropdown      | Allowed roles specific to a page |
