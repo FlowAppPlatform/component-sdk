@@ -1,3 +1,7 @@
+# Built
+es/
+lib/
+
 # Logs
 logs
 *.log

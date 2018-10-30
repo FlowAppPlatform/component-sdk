@@ -1,14 +1,21 @@
 {
   "name": "flow-app-component",
-  "version": "1.0.16",
+  "version": "1.1.0",
   "description": "Component SDK for Flow.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "build": "nwb build-react-component --no-demo --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flowepinc/component-sdk.git"
+    "url": "git+https://github.com/flowappplatform/component-sdk.git"
   },
   "keywords": [
     "flow",
@@ -20,10 +27,16 @@
   "author": "Hackerbay Inc. <hello@hackerbay.io>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/flowepinc/component-sdk/issues"
+    "url": "https://github.com/flowappplatform/component-sdk/issues"
   },
-  "homepage": "https://github.com/flowepinc/component-sdk#readme",
-  "dependencies": {
-    "react": "^16.4.1"
+  "homepage": "https://github.com/flowappplatform/component-sdk#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "nwb": "0.23.x",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   }
 }
