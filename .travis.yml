@@ -15,3 +15,6 @@ deploy:
  on:
    branch: release
    tags: false
+   
+notifications:
+   slack: hackerbaycompany:Wwpzzm6F0A6DjQY8F1lebbee
